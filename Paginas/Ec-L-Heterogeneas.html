@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de EDS</title>
+    <link rel="icon" type="image/png" href="/assets/funcion.png">
+    <link rel="stylesheet" href="/Ecuaviones-main/Estilos/style.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="./index.html" class="link">Inicio</a></li>
+      <li><a href="./Ec-L-Heterogeneas.html" class="link">Ec-L-Heterogeneas</a></li>
+    </ul>
+  </nav>
+   
+      
+      <section class="container">
+            <h2>Ecuación:</h2>
+      <h1 id="ecuacion"></h1>
+
+      
+        <label for="a0">Digite valor de a<sub>0</sub>:</label>
+        <input type="text" id="a0" oninput="actualizarEcuacion()">
+      </div>
+      <div>
+        <label for="a1">Digite valor de a<sub>1</sub>:</label>
+        <input type="text" id="a1" oninput="actualizarEcuacion()">
+      </div>
+      <div>
+        <label for="expoa1">Digite el Exponente de x a<sub>1</sub>:</label>
+        <input type="text" id="expoa1" oninput="actualizarEcuacion()">
+      </div>
+      <div>
+        <label for="g">Digite valor de g(x):</label>
+        <input type="text" id="g" oninput="actualizarEcuacion()">
+      </div>
+      <div>
+        <label for="expog">Digite el Exponente de x g:</label>
+        <input type="text" id="expog" oninput="actualizarEcuacion()">
+      </div>
+      
+      <button onclick="calcular()">Calcular</button>
+      
+    </section>
+
+    <section class="container2">
+      <div id="resultado">Resultado: </div>
+    </section>
+
+    <script src="/Ecuaviones-main/Scripts/index.js"></script>
+</body>
+</html>
